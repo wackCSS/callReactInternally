@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import Gallery from './components/gallery';
 
 window.imGallery = function(slideNum) {
-  console.log(slideNum);
   ReactDOM.render(
       <Gallery slideNum={slideNum} />
       , document.querySelector('.container'));
