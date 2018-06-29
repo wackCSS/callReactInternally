@@ -8,6 +8,19 @@
   </head>
   <body>
     <div class="container"></div>
+    <a href="#" class="js-link" data-slide-no="3">test</a>
   </body>
   <script src="/bundle.js"></script>
+  <script>
+    const link = document.querySelector('.js-link');
+    const data = link.dataset.slideNo;
+
+    link.addEventListener('click', (e)=> {
+      e.preventDefault();
+      //console.log(data);
+
+      window.imGallery(data);
+
+    });
+  </script>
 </html>
